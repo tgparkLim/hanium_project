@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context="com.stylingandroid.ble.BleActivity"
+    android:background="@color/white"
+    >
+
+   <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+          android:layout_margin="10dp"
+           android:orientation="horizontal"
+           android:layout_width="fill_parent"
+           android:layout_height="20dp">
+           <TextView
+               android:text="@string/speed_title"
+               android:layout_width="50dp"
+               android:layout_height="fill_parent"
+               />
+           <TextView
+               android:text="@string/direct_title"
+               android:id="@+id/speedTV"
+               android:layout_width="wrap_content"
+               android:layout_height="fill_parent"
+               />
+       </LinearLayout>
+       <LinearLayout
+           android:layout_margin="10dp"
+           android:orientation="horizontal"
+           android:layout_width="fill_parent"
+           android:layout_height="20dp">
+           <TextView
+               android:text="@string/direct_title"
+               android:layout_width="50dp"
+               android:layout_height="wrap_content"
+
+               />
+           <TextView
+               android:text="@string/direct_title"
+               android:id="@+id/directTV"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+              />
+       </LinearLayout>
+
+        <com.example.mtrust.JoystickView
+            android:id="@+id/joy_stick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+       <ImageView
+           android:layout_gravity="center"
+           android:layout_marginBottom="10dp"
+           android:src="@drawable/bi"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+   </LinearLayout>
+
+</FrameLayout>
